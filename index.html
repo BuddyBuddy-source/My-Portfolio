@@ -308,19 +308,33 @@ JavaScript in a real-world scenario</p>
 
     <!-- Contact Info & Form -->
     <div class="col-md-6" data-aos="fade-left">
-      <form>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Your Name" required>
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Your Email" required>
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-success px-4 py-2 rounded-pill w-100">Send Message</button>
-      </form>
+  <form action="https://formsubmit.co/honeyhanu7696@gmail.com" method="POST">
+    
+    <!-- Redirect to thankyou.html -->
+    <input type="hidden" name="_next" value="/My-Portfolio/thankyou.html">
+
+    <!-- Disable CAPTCHA -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <div class="mb-3">
+      <input type="text" class="form-control" name="name" placeholder="Your Name" required>
     </div>
+
+    <div class="mb-3">
+      <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+    </div>
+
+    <div class="mb-3">
+      <textarea class="form-control" name="message" rows="4" placeholder="Your Message" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success px-4 py-2 rounded-pill w-100">
+      Send Message
+    </button>
+  </form>
+</div>
+
+
 
     <!-- Social Icons -->
     <div class="col-12 text-center mt-4">
