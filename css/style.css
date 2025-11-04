@@ -14,16 +14,25 @@ strong{
   border-radius: 20px;
   
 }
+#minicircle{
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  z-index: 9999;
+  background-color: #FF6F3C;
+  border-radius: 50%;
+}
+
 
 .image-container img {
-  transform: translateX(90%) scale(1);
+  transform: translateX(90%) scale(1.2);
   transition: all 1s ease-in-out;
   filter: grayscale(100%);
   border-radius: 30px;
 }
 
 .image-container:hover img {
-  transform: translateX(0%) scale(1.05);
+  transform: translateX(0%) scale(1);
   filter: grayscale(0%) brightness(105%);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
